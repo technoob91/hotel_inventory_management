@@ -12,9 +12,13 @@ default: &default
 
 development:
   <<: *default
-  database: anyplace_development
-  username: postgres
-  password: root
+  host: ec2-174-129-27-3.compute-1.amazonaws.com
+  database: d9b07h3cv6q3rls
+  username: pimtqvqdspyznw
+  password: dd326026c7ac476783dd63039b74a48b8f85c7c308ae75e9a97da3a137317846
+  # database: anyplace_development
+  # username: postgres
+  # password: root
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
