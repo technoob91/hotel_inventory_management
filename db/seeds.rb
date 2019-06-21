@@ -28,7 +28,7 @@ end_date = start_date + 90.days
 @rooms.each do |room|
   start_date.upto(end_date) do |date|
     puts "date: #{date}, room id: #{room.id}"
-    DailyRate.create(date: date, rate: 100, room_type_id: room.room_type_id)
+    DailyRate.create(date: date, rate: 100, room_type_id: room.room_type_id, room_id: room.id)
     DailyInventory.create(date: date, available: true, room_id: room.id, room_type_id: room.room_type_id)
   end  
 end

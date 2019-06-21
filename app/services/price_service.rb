@@ -8,9 +8,9 @@ class PriceService
       # @rooms = Room.all
     end
   
-    def get_price(params)
-      DailyRate.where("room_type_id = ? AND date BETWEEN ? AND ?",
-                       params["id"], params["from-date"], 
+    def get_price(params, room_id)
+      DailyRate.where("room_type_id = ? AND room_id = ? AND date BETWEEN ? AND ?",
+                       params["id"], room_id, params["from-date"],
                        params["to-date"]).sum(:rate).to_i
     end
   end

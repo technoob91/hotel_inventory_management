@@ -7,11 +7,10 @@ class RoomTypesController < ApplicationController
 
   def availability
     puts "params: #{params}"
-    room_price = prices(params)
     availability = AvailabilityService.get_availability(params)
     
     response = {
-      price: room_price,
+      price: prices(params, availability[:room_id]) || 0,
       available: availability[:available],
       room: availability[:room_id]
     }
