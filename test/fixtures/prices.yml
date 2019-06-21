@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  from_date: 2019-06-16 13:10:07
+  to_date: 2019-06-16 13:10:07
+  rate: 
+
+two:
+  from_date: 2019-06-16 13:10:07
+  to_date: 2019-06-16 13:10:07
+  rate: 

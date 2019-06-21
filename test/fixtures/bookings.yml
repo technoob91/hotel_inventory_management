@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  check_in_date: 2019-06-18 21:46:46
+  check_out_date: 2019-06-18 21:46:46
+  price: 
+
+two:
+  check_in_date: 2019-06-18 21:46:46
+  check_out_date: 2019-06-18 21:46:46
+  price: 
