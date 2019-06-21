@@ -12,7 +12,7 @@ Property.populate 5 do |property|
   RoomType.populate 1 do |room_type|
     room_type.property_id = property.id
     room_type.name = 'Double'
-    Room.populate 2 do |room|
+    Room.populate 1 do |room|
       room.name = "Room"
       room.property_id = property.id
       room.room_type_id = room_type.id
