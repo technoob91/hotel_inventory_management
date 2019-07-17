@@ -10,7 +10,7 @@ class AvailabilityService
                                               AND date BETWEEN ? AND ?",
                                               params["id"].to_i, start_date, end_date).to_a
       available_count = available_rooms.count
-      puts "#{start_date} #{end_date} #{total_days} #{available_count}"
+      
       if (total_days <= available_count)
         return {
           room_id: available_rooms[0].room_id,
